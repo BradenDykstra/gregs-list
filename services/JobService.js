@@ -4,7 +4,7 @@ let _state = {
   jobs: [new Job({
     companyName: "idk",
     pay: "yeah",
-    description: "swooce"
+    description: "this is something"
   })]
 }
 
