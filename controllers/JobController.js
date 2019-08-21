@@ -21,9 +21,9 @@ export default class JobController {
     event.preventDefault();
     let form = event.target;
     let newJob = {
-      something: form.something.value,
-      that: form.that.value,
-      swooce: form.swooce.value
+      companyName: form.companyName.value,
+      pay: form.pay.value,
+      description: form.description.value
     }
     _jobService.addJob(newJob);
     _draw();

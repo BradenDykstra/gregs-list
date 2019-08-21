@@ -2,9 +2,9 @@ import Job from "../models/Job.js"
 
 let _state = {
   jobs: [new Job({
-    something: "idk",
-    that: "yeah",
-    swooce: "swooce"
+    companyName: "idk",
+    pay: "yeah",
+    description: "swooce"
   })]
 }
 

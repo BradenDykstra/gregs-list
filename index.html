@@ -73,12 +73,14 @@
       </h1>
       <form class="col-6" onsubmit="app.controllers.jobController.addJob(event)">
         <div class="form-group">
-          <label for="something">something</label>
-          <input type="text" class="form-control" name="something" id="something" placeholder="something?" required>
-          <label for="that">that</label>
-          <input type="text" class="form-control" name="that" id="that" placeholder="that" required>
-          <label for="swooce">swooce</label>
-          <input type="text" class="form-control" name="swooce" id="swooce" placeholder="swooce" required>
+          <label for="company-name">Company name</label>
+          <input type="text" class="form-control" name="company-name" id="company-name" placeholder="Company name"
+            required>
+          <label for="pay">Pay</label>
+          <input type="text" class="form-control" name="pay" id="pay" placeholder="pay" required>
+          <label for="description">Description</label>
+          <input type="text" class="form-control" name="description" id="description" placeholder="description"
+            required>
           <button type="submit" class="btn btn-secondary mt-3">Make Job</button>
         </div>
       </form>
