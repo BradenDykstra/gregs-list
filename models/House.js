@@ -15,6 +15,7 @@ export default class House {
     <h3>Bathrooms: ${this.bathrooms}</h3>
     <h3>Price: $${this.price}</h3>
     <img src="${this.imgURL}" alt="No image available">
-    <p>${this.description}</p>`
+    <p>${this.description}</p>
+    <br>`
   }
 }

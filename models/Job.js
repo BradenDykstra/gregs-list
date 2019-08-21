@@ -11,6 +11,7 @@ export default class Job {
     <h1>Company Name: ${this.companyName}</h1>
     <h3>Pay: ${this.pay}</h3>
     <h3>Description: ${this.description}</h3>
-    <img src="${this.imgURL}">`
+    <img src="${this.imgURL}">
+    <br>`
   }
 }

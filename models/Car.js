@@ -15,6 +15,7 @@ export default class Car {
     <h3>Price: $${this.price}</h3>
     <p>Year: ${this.year}</p>
     <img src=${this.imgURL} alt="No image available">
-    <p>${this.description}</p>`
+    <p>${this.description}</p>
+    <br>`
   }
 }
