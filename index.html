@@ -6,10 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Greg's List</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
 </head>
 
-<body>
+<body class="bg-dark text-light">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <h1 class="col-12 text-center">
+        Make a Car!
+      </h1>
+      <form class="col-6" onsubmit="app.controllers.carController.addCar(event)">
+        <div class="form-group">
+          <label for="make">Make</label>
+          <input type="text" class="form-control" name="make" id="make" placeholder="Type in a make" required>
+          <label for="model">Model</label>
+          <input type="text" class="form-control" name="model" id="model" placeholder="Type in a model" required>
+          <label for="price">Price</label>
+          <input type="number" class="form-control" name="price" id="price" placeholder="Type in a price" required>
+          <label for="year">Year</label>
+          <input type="number" min="1890" max="2030" class="form-control" name="year" id="year" required>
+          <label for="imgURL">Image URL</label>
+          <input type="text" class="form-control" name="imgURL" id="imgURL" placeholder="Type in an image URL">
+          <label for="description">Description</label>
+          <input type="text" class="form-control" name="description" id="description"
+            placeholder="Type in a description">
+          <button type="submit" class="btn btn-secondary mt-3">Make Car</button>
+        </div>
+      </form>
+    </div>
+    <div id="cars" class="row">
 
+
+    </div>
+  </div>
+  <script src="app/main.js" type="module"></script>
 </body>
 
 </html>
