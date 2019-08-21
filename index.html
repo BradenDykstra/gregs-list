@@ -7,11 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Greg's List</title>
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-dark text-light">
   <div class="container-fluid">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center border">
       <h1 class="col-12 text-center">
         Make a Car!
       </h1>
@@ -34,8 +35,55 @@
         </div>
       </form>
     </div>
-    <div id="cars" class="row">
+    <div id="cars" class="row mb-5 border">
 
+
+    </div>
+    <div class="row justify-content-center border">
+      <h1 class="col-12 text-center">
+        Make a House!
+      </h1>
+      <form class="col-6" onsubmit="app.controllers.houseController.addHouse(event)">
+        <div class="form-group">
+          <label for="floors">Floors</label>
+          <input type="number" class="form-control" name="floors" id="floors" placeholder="How many floors?" required>
+          <label for="bedrooms">Bedrooms</label>
+          <input type="number" class="form-control" name="bedrooms" id="bedrooms" placeholder="How many bedrooms?"
+            required>
+          <label for="bathrooms">Bathrooms</label>
+          <input type="number" class="form-control" name="bathrooms" id="bathrooms" placeholder="How many bathrooms?"
+            required>
+          <label for="price">Price</label>
+          <input type="number" class="form-control" name="price" id="price" placeholder="Type in a price" required>
+          <label for="imgURL">Image URL</label>
+          <input type="text" class="form-control" name="imgURL" id="imgURL" placeholder="Type in an image URL">
+          <label for="description">Description</label>
+          <input type="text" class="form-control" name="description" id="description"
+            placeholder="Type in a description">
+          <button type="submit" class="btn btn-secondary mt-3">Make House</button>
+        </div>
+      </form>
+    </div>
+    <div id="houses" class="row mb-5 border">
+
+    </div>
+    <div class="row justify-content-center border">
+      <h1 class="col-12 text-center">
+        Make a Job!
+      </h1>
+      <form class="col-6" onsubmit="app.controllers.jobController.addJob(event)">
+        <div class="form-group">
+          <label for="something">something</label>
+          <input type="text" class="form-control" name="something" id="something" placeholder="something?" required>
+          <label for="that">that</label>
+          <input type="text" class="form-control" name="that" id="that" placeholder="that" required>
+          <label for="swooce">swooce</label>
+          <input type="text" class="form-control" name="swooce" id="swooce" placeholder="swooce" required>
+          <button type="submit" class="btn btn-secondary mt-3">Make Job</button>
+        </div>
+      </form>
+    </div>
+    <div id="jobs" class="row mb-5 border">
 
     </div>
   </div>
