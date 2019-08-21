@@ -7,7 +7,7 @@ function _draw() {
   let houses = _houseService.Houses;
   houses.forEach((house, index) => {
     template += house.Template;
-    template += `<button class="btn btn-danger mb-2" onclick="app.controllers.houseController.deleteHouse(${index})">Delete</button></div>`
+    template += `<button class="btn btn-danger mb-2" onclick="app.controllers.houseController.deleteHouse(${index})">Delete <i class="fas fa-home"></i></button></div>`
   });
   document.querySelector("#houses").innerHTML = template;
 }

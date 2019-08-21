@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Greg's List</title>
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,7 +15,7 @@
   <div class="container-fluid">
     <div class="row justify-content-center border">
       <h1 class="col-12 text-center">
-        Make a Car!
+        Make a Car <i class="fas fa-car"></i>!
       </h1>
       <form class="col-6" onsubmit="app.controllers.carController.addCar(event)">
         <div class="form-group">
@@ -31,7 +32,7 @@
           <label for="description">Description</label>
           <input type="text" class="form-control" name="description" id="description"
             placeholder="Type in a description">
-          <button type="submit" class="btn btn-secondary mt-3">Make Car</button>
+          <button type="submit" class="btn btn-secondary mt-3">Make Car <i class="fas fa-car"></i></button>
         </div>
       </form>
     </div>
@@ -41,7 +42,7 @@
     </div>
     <div class="row justify-content-center border">
       <h1 class="col-12 text-center">
-        Make a House!
+        Make a House <i class="fas fa-home"></i>!
       </h1>
       <form class="col-6" onsubmit="app.controllers.houseController.addHouse(event)">
         <div class="form-group">
@@ -60,7 +61,7 @@
           <label for="description">Description</label>
           <input type="text" class="form-control" name="description" id="description"
             placeholder="Type in a description">
-          <button type="submit" class="btn btn-secondary mt-3">Make House</button>
+          <button type="submit" class="btn btn-secondary mt-3">Make House <i class="fas fa-home"></i></button>
         </div>
       </form>
     </div>
@@ -69,7 +70,7 @@
     </div>
     <div class="row justify-content-center border">
       <h1 class="col-12 text-center">
-        Make a Job!
+        Make a Job <i class="fas fa-briefcase"></i>!
       </h1>
       <form class="col-6" onsubmit="app.controllers.jobController.addJob(event)">
         <div class="form-group">
@@ -83,7 +84,7 @@
             required>
           <label for="imgURL">Image URL</label>
           <input type="text" class="form-control" name="imgURL" id="imgURL" placeholder="Enter an image URL">
-          <button type="submit" class="btn btn-secondary mt-3">Make Job</button>
+          <button type="submit" class="btn btn-secondary mt-3">Make Job <i class="fas fa-briefcase"></i></button>
         </div>
       </form>
     </div>

@@ -7,7 +7,7 @@ function _draw() {
   let jobs = _jobService.Jobs;
   jobs.forEach((job, index) => {
     template += job.Template;
-    template += `<button class="btn btn-danger mb-2" onclick="app.controllers.jobController.deleteJob(${index})">Delete</button></div>`
+    template += `<button class="btn btn-danger mb-2" onclick="app.controllers.jobController.deleteJob(${index})">Delete <i class="fas fa-briefcase"></i></button></div>`
   })
   document.querySelector("#jobs").innerHTML = template;
 }

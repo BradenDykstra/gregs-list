@@ -2,28 +2,28 @@ import CarService from "../services/CarService.js";
 
 let _carService = new CarService();
 
-function _draw(){
+function _draw() {
   let template = ''
   let cars = _carService.Cars
   cars.forEach((car, index) => {
     template += car.Template
-    template += `<button class="btn btn-danger mb-2" onclick="app.controllers.carController.deleteCar(${index})">Delete</button></div>`
+    template += `<button class="btn btn-danger mb-2" onclick="app.controllers.carController.deleteCar(${index})">Delete <i class="fas fa-car"></i></button></div>`
   })
   document.querySelector("#cars").innerHTML = template;
 }
 
 export default class CarController {
   constructor() {
-    
+
     _draw();
   }
 
-  deleteCar(index){
+  deleteCar(index) {
     _carService.deleteCar(index);
     _draw();
   }
 
-  addCar(event){
+  addCar(event) {
     event.preventDefault();
     let form = event.target;
     let newCar = {
