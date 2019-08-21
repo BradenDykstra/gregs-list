@@ -23,7 +23,8 @@ export default class JobController {
     let newJob = {
       companyName: form.companyName.value,
       pay: form.pay.value,
-      description: form.description.value
+      description: form.description.value,
+      imgURL: form.imgURL.value
     }
     _jobService.addJob(newJob);
     _draw();
